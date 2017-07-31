@@ -14,6 +14,33 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class RockPaperScissors {
 
+    public enum Type 
+    {
+    
+        ROCK, PAPER, SCISSORS;
+        
+        /**
+         *
+         * @param value
+         * @return
+         */
+        public static Type parseType(String value)
+        {
+            if(value == "ROCK")
+            {
+                return ROCK;
+            }
+            else if(value == "PAPER")
+            {
+                return PAPER;
+            }
+            else
+            {
+                return SCISSORS;
+            }
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
